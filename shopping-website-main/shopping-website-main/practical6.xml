@@ -1,0 +1,65 @@
+<studentRecord>
+<student id="2105806">
+<name> Gauri Upadhyay </name>
+<rollno>2105806 </rollno>
+<Course> Bachelor Of Vocational </Course>
+<cgpa> 8.31 </cgpa>
+<collage>Daylabgh Education Institute</collage>
+</student>
+<student id="2105850">
+<name> Yashi Agrawarl </name>
+<rollno> 2105850 </rollno>
+<Course> Bachelor Of Vocational </Course>
+<cgpa> 9.8 </cgpa>
+<collage>Daylabgh Education Institute</collage>
+</student>
+<student id="2105802">
+<name> Bhoomi Gupta </name>
+<rollno> 2105802 </rollno>
+<Course> Bachelor Of Vocational </Course>
+<cgpa> 9.5 </cgpa>
+<collage>Daylabgh Education Institute</collage>
+</student>
+<student id="2105816">
+<name> Manorama </name>
+<rollno> 2105816 </rollno>
+<Course> Bachelor Of Vocational </Course>
+<cgpa> 8 </cgpa>
+<collage>Daylabgh Education Institute</collage>
+</student>
+<student id="2105825">
+<name> Pinkal Savita </name>
+<rollno> 2105825 </rollno>
+<Course> Bachelor Of Vocational </Course>
+<cgpa> 8.5 </cgpa>
+<collage>Daylabgh Education Institute</collage>
+</student>
+<student id="2105839">
+<name> Shivani Yadav </name>
+<rollno> 2105839 </rollno>
+<Course> Bachelor Of Vocational </Course>
+<cgpa> 8.5 </cgpa>
+<collage>Daylabgh Education Institute</collage>
+</student>
+<student id="2105812">
+<name> khushi Goswami </name>
+<rollno> 2105812 </rollno>
+<Course> Bachelor Of Vocational </Course>
+<cgpa> 9.3 </cgpa>
+<collage>Daylabgh Education Institute</collage>
+</student>
+<student id="2105830">
+<name> Ranu Singh </name>
+<rollno>2105830</rollno>
+<Course>Bachelor Of Vocational </Course>
+<cgpa> 7.8 </cgpa>
+<collage>Daylabgh Education Institute</collage>
+</student>
+<student id="2105838">
+<name> Shivani Sharma </name>
+<rollno> 2105838 </rollno>
+<Course> Bachelor Of Vocational </Course>
+<cgpa> 7.0 </cgpa>
+<collage>Daylabgh Education Institute</collage>
+</student>
+</studentRecord>

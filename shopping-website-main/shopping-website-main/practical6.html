@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+<title>Reads the XML data using JavaScript</title>
+<!-- CSS -->
+<style>
+table {
+border-collapse: collapse;
+width: 100%;
+}
+th,
+td {
+text-align: left;
+padding: 8px;
+}
+tr:nth-child(even) {
+background-color: #7ce2af
+}
+th {
+background-color: #7c0f65;
+color: white;
+}
+.button {
+position: relative;
+text-align: center;
+padding: 20px;
+border: 4px solid rgb(55, 12, 211);
+background: rgba(20, 192, 4, 0.5);
+color: rgb(230, 36, 78);
+outline: none;
+border-radius: 30px;
+font-size: 30px;
+width: 500px;
+}
+.button:hover {
+color: black;
+background: white;
+}
+</style>
+<!--JavaScript-->
+<script>
+function loadXMLDoc() {
+let xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+// Request finished and response 			// is ready and Status is "OK"
+if (this.readyState == 4 && this.status == 200) {				stdDetails(this);
+}
+};
+// employee.xml is the external xml file
+xmlhttp.open("GET", "practical6.xml", true);
+xmlhttp.send();
+}
+function stdDetails(xml) {
+let i;
+let xmlDoc = xml.responseXML;
+let table =
+`<tr><th>Name</th><th>rollno</th>
+<th>Course</th><th>Cgpa</th>
+<th>collage</th>
+</tr>`;
+let x = xmlDoc.getElementsByTagName("student");        
+let det = document.getElementById("id1").value;
+// Start to fetch the data by using TagName 
+for (i = 0; i < x.length; i++) {
+if(det===x[i].getAttribute("id"))
+{
+alert(x[i].getAttribute("id"));
+table += "<tr><td>" +
+x[i].getElementsByTagName("name")[0]
+.childNodes[0].nodeValue + "</td><td>" +
+x[i].getElementsByTagName("rollno")[0]
+.childNodes[0].nodeValue + "</td><td>" +
+x[i].getElementsByTagName("Course")[0]
+.childNodes[0].nodeValue + "</td><td>" +
+x[i].getElementsByTagName("cgpa")[0]
+.childNodes[0].nodeValue + "</td><td>" +
+x[i].getElementsByTagName("collage")[0]
+.childNodes[0].nodeValue + "</td><td>" ;
+}
+}
+// Print the xml data in table form
+document.getElementById("id").innerHTML = table;
+}
+</script>
+</head>
+<body>
+<center>
+<input id="id1">
+<button type="button" class="button" onclick="loadXMLDoc()">
+Get Student Details
+</button>
+</center>
+<br><br>
+<table id="id"></table>
+</body>
+</html>
+
+
+
